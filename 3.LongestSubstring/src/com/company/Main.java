@@ -1,6 +1,7 @@
 package com.company;
 
 import java.util.HashMap;
+import java.math.*;
 
 public class Main {
     public static int lengthOfLongestSubstring(String s) {
@@ -9,48 +10,18 @@ public class Main {
         int start = 0;
         // end of sliding window
         int p = 0;
-        // max length of sliding window
-        int max = 0;
+        // record the max length of sliding window
         int result = 0;
         HashMap<Character, Integer> map = new HashMap<>();
         while (p < str.length) {
-            // if map doesn't contain key str[p]
-            if (!map.containsKey(str[p])) {
-                map.put(str[p], p);
-                result = p - start + 1;
-                if (result > max) {
-                    max = result;
-                }
-                p++;
+            if (map.containsKey(str[p])) {
+                start = Math.max(map.get(str[p]) + 1, start);
             }
-            // if map contains key str[p]
-            else {
-
-//                if (start <= map.get(str[p])) {
-//                    start = map.get(str[p]) + 1;
-//                    map.put(str[p], p);
-//                    p = start;
-//                }
-//                // if sliding window doesn't contain character str[p], update map.
-//                else {
-//                    map.put(str[p], p);
-//                    p++;
-//                }
-                if (p > map.get(str[p])) {
-                    start = map.get(str[p]) + 1;
-                    map.put(str[p],p);
-                    p = start;
-                }
-                else {
-                    result = p - start + 1;
-                    if (result > max) {
-                        max = result;
-                    }
-                    p++;
-                }
-            }
+            result = Math.max(p - start + 1, result);
+            map.put(str[p], p);
+            p++;
         }
-        return max;
+        return result;
     }
 
     public static void main(String[] args) {
