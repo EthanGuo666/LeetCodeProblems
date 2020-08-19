@@ -8,3 +8,6 @@ All problems are structured in sequence order, which facilitates future reviewin
 Every morning is a new start, but whether you have progress or not depends on your self-dicipline.
 
 Keep going Ethan, time will witness the change.
+
+## Inspirations
+My thoughts will come out here soon.
