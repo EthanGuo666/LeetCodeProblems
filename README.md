@@ -10,4 +10,4 @@ Every morning is a new start, but whether you have progress or not depends on yo
 Keep going Ethan, time will witness the change.
 
 ## 💡Inspirations
-My thoughts will come out here soon.
+My thoughts will come out soon.
