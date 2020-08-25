@@ -13,9 +13,9 @@ Keep going Ethan, time will witness the change. 🐛🐛🐛
 A lot of people quiver when they first see the long list of leetcode problems.
 
 However, there is nothing to worry, just remember:
-##### 1. Practice one type of question at a time, this is extremely important!
+#### 1. Practice one type of question at a time, this is extremely important!
 - Once you do ten or more problems of the same type, you will automatically find the rules.
-##### 2. Always start from the easy level.
+#### 2. Always start from the easy level.
 - This is to keep you motivated.
 - If you can solve the intermidiate level of problems very easily, it's time to change another type.
 
