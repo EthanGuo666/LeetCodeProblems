@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
     public class TreeNode {
         int val;
@@ -18,14 +21,15 @@ public class Main {
         }
     }
 
-    public TreeNode invertTree(TreeNode root) {
+    public List<Integer> postorderTraversal(TreeNode root) {
+        ArrayList<Integer> arr = new ArrayList<>();
         if (root == null) {
-            return null;
+            return arr;
         }
-        TreeNode t = new TreeNode(root.val);
-        t.left = invertTree(root.right);
-        t.right = invertTree(root.left);
-        return t;
+        arr.addAll(postorderTraversal(root.left));
+        arr.addAll(postorderTraversal(root.right));
+        arr.add(root.val);
+        return arr;
     }
 
     public static void main(String[] args) {
