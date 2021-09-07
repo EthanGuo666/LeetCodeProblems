@@ -1,16 +1,15 @@
 public class Main {
     public static int climbStairs(int n) {
-        if (n == 1 || n == 2) {
-            return n;
+        if (n == 1) {
+            return 1;
         }
-        int[] counts = new int[n + 1];
-        counts[0] = 0;
-        counts[1] = 1;
-        counts[2] = 2;
-        for (int i = 3; i <= n; i++) {
-            counts[i] = counts[i - 1] + counts[i - 2];
+        int[] arr = new int[n + 1];
+        arr[0] = 1;
+        arr[1] = 1;
+        for (int i = 2; i <= n; i++) {
+            arr[i] = arr[i - 2] + arr[i - 1];
         }
-        return counts[n];
+        return arr[n];
     }
 
     public static void main(String[] args) {
