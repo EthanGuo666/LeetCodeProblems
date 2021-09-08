@@ -4,18 +4,19 @@ public class Main {
         if (len == 1) {
             return nums[0];
         }
-        if (len == 2) {
-            return Math.max(nums[0], nums[1]);
+        int[] arr = new int[len + 2];
+        int[] result = new int[len + 2];
+        for (int i = 2; i < len + 2; i++) {
+            arr[i] = nums[i - 2];
         }
-        int[] copyNums = new int[len + 3];
-        for (int i = 3; i < len + 3; i++) {
-            copyNums[i] = nums[i - 3];
-        }
-        int[] ans = new int[len + 3];
-        int max = 0;
-        for (int i = 3; i < len + 3; i++) {
-            ans[i] = Math.max(copyNums[i] + ans[i - 2], copyNums[i] + ans[i - 3]);
-            max = Math.max(ans[i], max);
+        result[1] = 0;
+        result[2] = arr[2];
+        int max = arr[2];
+        for (int i = 3; i < len + 2; i++) {
+            result[i] = Math.max(result[i - 3] + arr[i], result[i - 2] + arr[i]);
+            if (max < result[i]) {
+                max = result[i];
+            }
         }
         return max;
     }
@@ -24,9 +25,10 @@ public class Main {
         // {1,2,3,1}   4
         // {1,3,1}     3
         // {1,2}       2
+        // {2,1}       2
         // {1,7,9,2}  10
         // {0}         0
-        int[] nums = {0};
+        int[] nums = {1};
         System.out.println(rob(nums));
     }
 }
