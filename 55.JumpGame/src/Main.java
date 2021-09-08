@@ -4,25 +4,30 @@ public class Main {
         if (len == 1) {
             return true;
         }
-        int max = nums[0];
-        for (int i = 0; i < len - 1; i = max) {
-            if (nums[i] == 0) {
-                return false;
+        int step = nums[0];
+        int p = 0;
+        while (step >= 0) {
+            if (p == len - 1) {
+                return true;
             }
-            max = Math.max(max, nums[i] + i);
-            for (int j = i; j < max; j++) {
-                if (j < len) {
-                    max = Math.max(max, nums[j] + j);
-                } else {
-                    return true;
-                }
+            if (step < nums[p]) {
+                step = nums[p];
             }
+            step--;
+            p++;
         }
-        return max >= len - 1;
+        return false;
     }
 
     public static void main(String[] args) {
-        int[] nums = {0};
+        // {0}          true
+        // {0,1}        false
+        // {3,2,1,0,4}  false
+        // {2,3,1,1,4}  true
+        // {1,2}        true
+        // {1,0,2}      false
+        // {1,2,3}      true
+        int[] nums = {1,2,3};
         System.out.println(canJump(nums));
     }
 }
