@@ -2,33 +2,33 @@ import java.util.ArrayDeque;
 import java.util.Deque;
 
 public class Main {
+    // 见题解：https://leetcode-cn.com/problems/maximum-sum-circular-subarray/solution/xi-xiang-tong-53ti-yi-yang-by-dc3a2nletu-qvk6/
     public static int maxSubarraySumCircular(int[] nums) {
         int len = nums.length;
-        int[] dp = new int[len * 2 + 1];
-        for (int i = 0; i < len * 2; i++) {
-            dp[i + 1] = dp[i] + nums[i % len];
+        int maxSum = nums[0], minSum = nums[0];
+        int totalSum = 0;
+        int maxPre = 0, minPre = 0;
+        for (int i = 0; i < len; i++) {
+            totalSum += nums[i];
+            maxPre = Math.max(nums[i], maxPre + nums[i]);
+            maxSum = Math.max(maxSum, maxPre);
+            minPre = Math.min(nums[i], minPre + nums[i]);
+            minSum = Math.min(minSum, minPre);
         }
-        for (int i = 0; i < len * 2; i++) {
-            System.out.println(dp[i]);
+        // 考虑全是负数的情况
+        if (maxSum<0){
+            return maxSum;
         }
-
-        int ans = nums[0];
-        Deque<Integer> deque = new ArrayDeque();
-        deque.offer(0);
-        for (int j = 1; j < 2 * len + 1; j++) {
-            if (deque.peekFirst() < j - len)
-                deque.pollFirst();
-            ans = Math.max(ans, dp[j] - dp[deque.peekFirst()]);
-            while (!deque.isEmpty() && dp[j] <= dp[deque.peekLast()]) {
-                deque.pollLast();
-            }
-            deque.offerLast(j);
-        }
-        return ans;
+        return Math.max(totalSum - minSum, maxSum);
     }
 
     public static void main(String[] args) {
-        int[] nums = {1, -2, 3, -2};
-        maxSubarraySumCircular(nums);
+        // {1,-2,3,-2}     3
+        // {5,-3,5}       10
+        // {3,-1,2,-1}     4
+        // {-1,-1,-1,-1}  -1
+        int[] nums = {-1,-1,-1,-1};
+        //maxSubarraySumCircular(nums);
+        System.out.println(maxSubarraySumCircular(nums));
     }
 }
