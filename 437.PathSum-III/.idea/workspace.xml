@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="996f0c55-f8f3-43b0-894e-0a0347dd3412" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../120.Triangle/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../120.Triangle/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../120.Triangle/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../120.Triangle/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../120.Triangle/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../120.Triangle/120.Triangle.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../120.Triangle/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../221.MaximalSquare/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../221.MaximalSquare/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../221.MaximalSquare/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../221.MaximalSquare/.idea/runConfigurations.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../221.MaximalSquare/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../221.MaximalSquare/221.MaximalSquare.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../221.MaximalSquare/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../240.SearchA2DMatrix-II/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../33.SearchInRotatedSortedArray/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../33.SearchInRotatedSortedArray/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../33.SearchInRotatedSortedArray/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../33.SearchInRotatedSortedArray/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../33.SearchInRotatedSortedArray/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../33.SearchInRotatedSortedArray/33.SearchInRotatedSortedArray.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../33.SearchInRotatedSortedArray/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/TreeNode.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/runConfigurations.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectId" id="2C14ymsw1GqCuHGDpqoMjfL7HVh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="996f0c55-f8f3-43b0-894e-0a0347dd3412" name="Changes" comment="" />
+      <created>1657957015150</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1657957015150</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
