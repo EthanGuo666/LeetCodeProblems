@@ -1,33 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="996f0c55-f8f3-43b0-894e-0a0347dd3412" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../120.Triangle/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../120.Triangle/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../120.Triangle/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../120.Triangle/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../120.Triangle/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../120.Triangle/120.Triangle.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../120.Triangle/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../221.MaximalSquare/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../221.MaximalSquare/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../221.MaximalSquare/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../221.MaximalSquare/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../221.MaximalSquare/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../221.MaximalSquare/221.MaximalSquare.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../221.MaximalSquare/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../240.SearchA2DMatrix-II/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../33.SearchInRotatedSortedArray/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../33.SearchInRotatedSortedArray/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../33.SearchInRotatedSortedArray/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../33.SearchInRotatedSortedArray/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../33.SearchInRotatedSortedArray/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../33.SearchInRotatedSortedArray/33.SearchInRotatedSortedArray.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../33.SearchInRotatedSortedArray/src/Main.java" afterDir="false" />
+    <list default="true" id="4e5f2949-1a67-45fe-8055-0325ae87071d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/437.PathSum-III.iml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/src/TreeNode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../.idea/runConfigurations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +34,7 @@
   <component name="ProjectCodeStyleSettingsMigration">
     <option name="version" value="2" />
   </component>
-  <component name="ProjectId" id="2C14ymsw1GqCuHGDpqoMjfL7HVh" />
+  <component name="ProjectId" id="2EKIbBcHocdys6U446wtvaWxZUL" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -63,26 +44,38 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
   </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="437.PathSum-III" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="996f0c55-f8f3-43b0-894e-0a0347dd3412" name="Changes" comment="" />
-      <created>1657957015150</created>
+      <changelist id="4e5f2949-1a67-45fe-8055-0325ae87071d" name="Changes" comment="" />
+      <created>1662300796583</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1657957015150</updated>
+      <updated>1662300796583</updated>
     </task>
     <servers />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="root.val" language="JAVA" />
+        <watch expression="root.left.val" language="JAVA" />
+        <watch expression="root.right.val" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
