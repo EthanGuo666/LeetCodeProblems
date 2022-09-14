@@ -1,39 +1,33 @@
-import java.util.LinkedList;
+import java.util.ArrayDeque;
+import java.util.Deque;
 
 public class Main {
     public static String makeGood(String s) {
-        char[] arrCh = s.toCharArray();
+        char[] arr = s.toCharArray();
         int n = s.length();
-        LinkedList<Character> linkCh = new LinkedList<>();
-        for (int i = 0; i < n; i++) {
-            linkCh.add(arrCh[i]);
-        }
-
-        int curLen = linkCh.size();
-        do {
-            for (int i = 0; i < linkCh.size() - 1;) {
-                if (Math.abs(linkCh.get(i) - linkCh.get(i + 1)) == 'a' - 'A') {
-                    linkCh.remove(i);
-                    linkCh.remove(i);
-                } else {
-                    i++;
-                }
+        Deque<Character> deq = new ArrayDeque<>();
+        deq.offer(arr[0]);
+        for (int i = 1; i < n; i++) {
+            if (deq.isEmpty()) {
+                deq.offer(arr[i]);
+                continue;
             }
-            if (linkCh.size() == curLen) {
-                break;
+            if (Math.abs(deq.getLast() - arr[i]) == 'a' - 'A') {
+                deq.removeLast();
             } else {
-                curLen = linkCh.size();
+                deq.offer(arr[i]);
             }
-        } while (true);
-
-        StringBuilder result = new StringBuilder();
-        for(int i=0;i<linkCh.size();i++) {
-            result.append(linkCh.get(i));
         }
-        return result.toString();
+        StringBuilder st = new StringBuilder();
+        while (!deq.isEmpty()) {
+            st.append(deq.poll());
+        }
+        return st.toString();
     }
 
     public static void main(String[] args) {
+        // "leEeetcode"
+        // "abBAcC"
         System.out.println(makeGood("leEeetcode"));
     }
 }
